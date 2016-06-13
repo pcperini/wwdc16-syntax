@@ -1,42 +1,54 @@
 // This defines all syntax variables that syntax themes must implement when they
 // include a syntax-variables.less file.
 
+@white: #FFFFFF;
+@black: #000000;
+@dark-blue: #292B36;
+@light-blue: lighten(@dark-blue, 25%);
+@red: #DF3E3D;
+@green: #4EBD5A;
+@orange: #D38F5E;
+@purple: #B93B99;
+@teal: #1AABA4;
+@lavendar: #8585CE;
+
+
 // General colors
-@syntax-text-color: #FFFFFF;
-@syntax-cursor-color: #FFFFFF;
-@syntax-selection-color: #292B37;
-@syntax-selection-flash-color: #292B37;
-@syntax-background-color: #000000;
+@syntax-text-color: @white;
+@syntax-cursor-color: @white;
+@syntax-selection-color: @light-blue;
+@syntax-selection-flash-color: @dark-blue;
+@syntax-background-color: @dark-blue;
 
 // Guide colors
-@syntax-wrap-guide-color: #292B37;
-@syntax-indent-guide-color: #292B37;
-@syntax-invisible-character-color: #292B37;
+@syntax-wrap-guide-color: @dark-blue;
+@syntax-indent-guide-color: @dark-blue;
+@syntax-invisible-character-color: @dark-blue;
 
 // For find and replace markers
-@syntax-result-marker-color: #292B37;
-@syntax-result-marker-color-selected: #FFFFFF;
+@syntax-result-marker-color: @dark-blue;
+@syntax-result-marker-color-selected: @white;
 
 // Gutter colors
-@syntax-gutter-text-color: #FFFFFF;
+@syntax-gutter-text-color: @white;
 @syntax-gutter-text-color-selected: @syntax-gutter-text-color;
-@syntax-gutter-background-color: #292B37;
-@syntax-gutter-background-color-selected: #8A91B8;
-@gutter-line-number: #FFFFFF;
+@syntax-gutter-background-color: @dark-blue;
+@syntax-gutter-background-color-selected: @light-blue;
+@gutter-line-number: @white;
 
 // For git diff info. i.e. in the gutter
-@syntax-color-renamed: #DE3D43;
-@syntax-color-added: #90B96D;
-@syntax-color-modified: #D79468;
-@syntax-color-removed: #DE3D43;
+@syntax-color-renamed: @red;
+@syntax-color-added: @green;
+@syntax-color-modified: @orange;
+@syntax-color-removed: @red;
 
 // Actual code
-@comment: #90B96D;
-@entity: #BA4097;
-@keyword: #BA4097;
-@special-method: #DE3D43;
-@constant: #D79468;
-@invalid: #DE3D43;
-@string: #DE3D43;
-@header: #8A86E7;
-@structure: #8A86E7;
+@comment: @green;
+@entity: @purple;
+@keyword: @purple;
+@special-method: @teal;
+@constant: @orange;
+@invalid: @red;
+@string: @red;
+@header: @lavendar;
+@structure: @lavendar;
