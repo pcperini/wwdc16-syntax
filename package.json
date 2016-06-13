@@ -1,11 +1,11 @@
 {
-  "name": "flat-ui-colors-syntax",
+  "name": "wwdc16-syntax",
   "theme": "syntax",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "private": true,
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "repository": "https://github.com/pcperini/flat-ui-colors-syntax"
+  "repository": "https://github.com/pcperini/wwdc16-syntax"
 }

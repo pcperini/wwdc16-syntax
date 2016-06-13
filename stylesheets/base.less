@@ -40,7 +40,7 @@
   .gutter .line-number.folded,
   .gutter .line-number:after,
   .fold-marker:after {
-    color: @light-gray;
+    color: @gutter-line-number;
   }
 
   .invisible {
@@ -57,59 +57,59 @@
 }
 
 .comment {
-  color: @light-green;
+  color: @comment;
 }
 
 .entity {
   &.name.type {
-    color: @light-blue;
+    color: @entity;
     font-weight: bold;
   }
 
   &.other.inherited-class {
-    color: @light-blue;
+    color: @entity;
   }
 }
 
 .keyword {
-  color: @light-purple;
+  color: @keyword;
 
   &.control {
-    color: @light-purple;
+    color: @keyword;
   }
 
   &.other.special-method {
-    color: @light-blue;
+    color: @special-method
   }
 
   &.other.unit {
-    color: @dark-yellow;
+    color: @constant;
   }
 }
 
 .storage {
-  color: @light-purple;
+  color: @entity;
 }
 
 .constant {
-  color: @dark-yellow;
+  color: @constant;
 
   &.character.escape,
   &.placeholder {
-    color: @orange;
+    color: @constant;
     font-weight: bold;
   }
 
   &.numeric {
-    color: @dark-yellow;
+    color: @constant;
   }
 
   &.other.color {
-    color: @turquoise;
+    color: @constant;
   }
 
   &.other.symbol {
-    color: @dark-turquoise;
+    color: @constant;
   }
 }
 
@@ -117,7 +117,7 @@
   color: @syntax-text-color;
 
   &.interpolation {
-    color: @blue;
+    color: @syntax-text-color;
     font-weight: bold;
   }
 
@@ -127,30 +127,30 @@
 }
 
 .invalid.illegal {
-  background-color: @red;
+  background-color: @invalid;
   color: @syntax-background-color;
 }
 
 .string {
-  color: @red;
+  color: @string;
 
   &.regexp {
-    color: @red;
+    color: @string;
   }
 
   &.other.link {
-    color: @red;
+    color: @string;
   }
 }
 
 .punctuation {
   &.definition {
     &.comment {
-      color: @light-green;
+      color: @comment;
     }
 
     &.string {
-      color: @red;
+      color: @string;
     }
 
     &.variable,
@@ -161,7 +161,7 @@
 
     &.heading,
     &.identity {
-      color: @light-blue;
+      color: @header;
     }
 
     &.bold {
@@ -173,62 +173,58 @@
     }
   }
 
-  &.section.embedded {
-    color: @dark-red;
-  }
-
 }
 
 .support {
   &.class {
-    color: @light-blue;
+    color: @structure;
   }
 
   &.function  {
-    color: @light-blue;
+    color: @structure;
     font-weight: bold;
 
     &.any-method {
-      color: @light-blue;
+      color: @structure;
     }
   }
 }
 
 .entity {
   &.name.function {
-    color: @light-blue;
+    color: @structure;
   }
 
   &.name.class, &.name.type.class {
-    color: @light-blue;
+    color: @structure;
   }
 
   &.name.section {
-    color: @light-blue;
+    color: @structure;
   }
 
   &.other.attribute-name {
     &.id {
-      color: @light-blue;
+      color: @structure;
     }
   }
 }
 
 .meta {
   &.link {
-    color: @orange;
+    color: @string;
   }
 
   &.require {
-    color: @light-purple;
+    color: @keyword;
   }
 
   &.selector {
-    color: @light-purple;
+    color: @keyword;
   }
 
   &.separator {
-    background-color: @gray;
+    background-color: @syntax-gutter-background-color;
     color: @syntax-text-color;
   }
 }
@@ -239,45 +235,45 @@
 
 .markup {
   &.bold {
-    color: @orange;
+    color: @string;
     font-weight: bold;
   }
 
   &.changed {
-    color: @purple;
+    color: @special-method;
   }
 
   &.deleted {
-    color: @red;
+    color: @invalid;
   }
 
   &.italic {
-    color: @purple;
+    color: @string;
     font-style: italic;
   }
 
   &.heading .punctuation.definition.heading {
-    color: @light-blue;
+    color: @special-method;
   }
 
   &.inserted {
-    color: @green;
+    color: @comment;
   }
 
   &.list {
-    color: @red;
+    color: @invalid;
   }
 
   &.quote {
-    color: @orange;
+    color: @string;
   }
 
   &.raw.inline {
-    color: @green;
+    color: @comment;
   }
 
   &.link {
-    color: @red;
+    color: @invalid;
   }
 
   &.underline {
@@ -286,14 +282,14 @@
 }
 
 .link .entity {
-  color: @red;
+  color: @string;
 }
 
 
 .source.gfm .markup {
   -webkit-font-smoothing: auto;
   &.heading {
-    color: @orange;
+    color: @string;
     font-weight: bold;
   }
 }
